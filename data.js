@@ -1,5 +1,5 @@
 const DATA = {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "source": "FastMoss",
  "category": "美国 TikTok Shop · 时尚配件",
  "shops": [
@@ -104,28 +104,28 @@ const DATA = {
    "rank": 4
   },
   {
-   "name": "OQ HAIR SHOP",
-   "id": "7495205878591949358",
-   "s7": "1.44万",
-   "g7": "$80.41万",
-   "s28": "5.58万",
-   "g28": "$304.02万",
-   "st": "125.01万",
-   "gt": "$6826.98万",
-   "card": 80.47,
-   "video": 16.49,
-   "live": 3.05,
-   "kol": 13.99,
-   "own": 5.54,
+   "name": "HIHIYO",
+   "id": "7494821004764611910",
+   "s7": "1.50万",
+   "g7": "$10.59万",
+   "s28": "3.39万",
+   "g28": "$31.14万",
+   "st": "6.56万",
+   "gt": "$57.17万",
+   "card": 57.92,
+   "video": 0.08,
+   "live": 42.0,
+   "kol": 42.08,
+   "own": 0.0,
    "type": "本土店",
-   "acct": "oqhairshop",
-   "rating": 4.8,
-   "creators": 9892,
-   "pname": "OQ Elastic Band for Human Hair Wig Edge",
-   "pprice": "$25.87",
-   "psales": "1.16万",
-   "pgmv": "$27.16万",
-   "pid": "1732614253692031534",
+   "acct": "-",
+   "rating": 4.7,
+   "creators": 14,
+   "pname": "HIHIYO Fashion Bracelet",
+   "pprice": "$88.90",
+   "psales": "1733",
+   "pgmv": "$15.40万",
+   "pid": "1732573826220921158",
    "rank": 5
   },
   {
@@ -154,31 +154,6 @@ const DATA = {
    "rank": 6
   },
   {
-   "name": "Hot Star Hair",
-   "id": "7495338309376314301",
-   "s7": "1.35万",
-   "g7": "$116.93万",
-   "s28": "5.09万",
-   "g28": "$409.61万",
-   "st": "56.22万",
-   "gt": "$3734.03万",
-   "card": 92.72,
-   "video": 7.28,
-   "live": 0.0,
-   "kol": 6.64,
-   "own": 0.64,
-   "type": "本土店",
-   "acct": "Hot Star Hair",
-   "rating": 4.6,
-   "creators": 2963,
-   "pname": "Elastic Rope Rubber Band",
-   "pprice": "$77.99",
-   "psales": "8405",
-   "pgmv": "$64.20万",
-   "pid": "1732685513253360573",
-   "rank": 7
-  },
-  {
    "name": "BestStoneshop",
    "id": "7495294960743779006",
    "s7": "1.27万",
@@ -201,7 +176,7 @@ const DATA = {
    "psales": "991",
    "pgmv": "$991",
    "pid": "1732762024693764798",
-   "rank": 8
+   "rank": 7
   },
   {
    "name": "KK-ARS",
@@ -226,7 +201,7 @@ const DATA = {
    "psales": "2.26万",
    "pgmv": "$4.53万",
    "pid": "1732636752981954896",
-   "rank": 9
+   "rank": 8
   },
   {
    "name": "BlinkGRAlab",
@@ -251,6 +226,31 @@ const DATA = {
    "psales": "515",
    "pgmv": "$515",
    "pid": "1732762115477901317",
+   "rank": 9
+  },
+  {
+   "name": "GoldenHour",
+   "id": "7494618543199323599",
+   "s7": "9567",
+   "g7": "$3.97万",
+   "s28": "3.16万",
+   "g28": "$13.39万",
+   "st": "11.20万",
+   "gt": "$56.42万",
+   "card": 61.19,
+   "video": 0.0,
+   "live": 38.81,
+   "kol": 38.81,
+   "own": 0.0,
+   "type": "本土店",
+   "acct": "-",
+   "rating": 4.8,
+   "creators": 5,
+   "pname": "Mystery Giveaway-Surprise Jewelry Piece",
+   "pprice": "$29.00",
+   "psales": "2253",
+   "pgmv": "$6.79万",
+   "pid": "1732393728433164751",
    "rank": 10
   }
  ]
