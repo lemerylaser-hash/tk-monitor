@@ -1,43 +1,59 @@
 ---
-name: Meet Lumière 主图模版
-description: >-
-  Use whenever making a Meet Lumière TikTok Shop product main image from a new
-  product photo or reference—apply the locked AI hero layout (pale mint glow,
-  centered product, kit wordmark).
+name: Meet Lumière Main Image Template
+description: Apply the locked Meet Lumière branded main-image template to product photos. This skill is for main images only, not detail images.
 ---
-# Meet Lumière 主图模版
 
-Apply this whenever the user sends a new product photo/reference for a Meet Lumière TikTok Shop **主图** (main image).
+# Meet Lumière — Locked Main Image Template
 
-## Locked assets (always read first)
-- Brand kit in this repo: `meet-lumi-re/` (or `brand/meet-lumiere/` if present)
-- Visual reference (approved look): `meet-lumi-re/MAIN_IMAGE_TEMPLATE.png`
-- Wordmark only: `meet-lumi-re/logo_wordmark.png`. **Never** approximate the brand name with another font or AI text.
-- Brand green for logo: `#5EAE69`. Background is a **much lighter** pale mint wash of the same hue—not the logo green.
-- On Grok Bot / Cursor local agents, the live kit may also live at the agent store path `brand/meet-lumiere/`; prefer repo assets when working from this repository.
+Apply this skill whenever the user requests a Meet Lumière product **main image**. Do not apply it to detail images, feature infographics, worn images, or lifestyle images unless the user explicitly asks.
 
-## Target look (must match template)
-1. **Canvas:** TikTok 1:1, **800×800** PNG.
-2. **Method:** Pure **AI generation** of product + soft effects. Do **not** Photoshop-cutout-composite the product onto a green plate as the primary method.
-3. **Background:** Soft radial mint glow—nearly white at edges, pale muted mint halo behind the product. Lightness ≈ approved template (浅). No floor, no reflection, **no drop shadow** under the product.
-4. **Product:** Accurate to the user’s photo (metal color, stones, silhouette). Floating, clean, **horizontally centered**; vertically near image center (slightly low OK if logo needs space). Product metal/diamonds must **not** pick up a green cast.
-5. **Wordmark:** Paste kit PNG only—top center, ~**400px** wide, top edge near **y≈78**, keep aspect ratio, no recolor/outline/shadow. Logo stays `#5EAE69`.
-6. **On-image copy:** Only the brand wordmark unless the user asks for more. If they name a target country, any extra copy must be idiomatic in that country’s language.
+## Locked brand assets
+- Approved visual reference: meet-lumi-re/MAIN_IMAGE_TEMPLATE.png
+- Original wordmark only: meet-lumi-re/logo_wordmark.png
+- The exact spelling is “Meet Lumière” with the accented è.
+- Never recreate, retype, approximate, translate, or ask an image model to generate the wordmark.
+- Use the supplied wordmark image asset. Preserve its original proportions, color, edges, and placement from the approved template.
+
+## Locked canvas and visual system
+- Canvas: square 1:1, 1254 × 1254 px.
+- Background: soft radial gradient with a pale mint glow near the center and a very light cream-white tone toward the edges.
+- Logo: original green handwritten Meet Lumière wordmark at the top, centered, in the exact approved template position and scale.
+- Product: centered as the hero, with balanced whitespace and the same overall placement and scale logic as the approved template.
+- Keep the jewelry's true metal and gemstone colors. Do not allow the mint background to cast green onto the product.
+- Do not add a floor, extra props, decorative frames, badges, slogans, prices, or promotional copy.
+- The only default text is the original Meet Lumière wordmark.
+
+## Product preservation — highest priority
+- Use the user's real product photographs as the authority for the jewelry.
+- Preserve the exact silhouette, dimensions, proportions, stone count and layout, metal color, settings, prongs, layers, joints, openings, and all visible construction details.
+- Do not redesign, simplify, embellish, mirror, add, remove, or rearrange product components.
+- If a clean product extraction or source-photo-based retouch can preserve the real geometry more accurately than a full AI redraw, use the source-photo-based method. Generate or edit the background separately when helpful.
+- Never distort the product to make it fit the template. Adjust the background or whitespace instead.
+- If the source image does not show a critical feature, do not invent it.
+
+## US-market language
+- The target market is the United States by default.
+- The main image contains no customer-facing copy by default, only the original wordmark.
+- If the user explicitly requests additional copy, write it in concise, idiomatic US English.
+- Never put Chinese copy on the image unless the user explicitly asks for it.
 
 ## Workflow
-1. Open `MAIN_IMAGE_TEMPLATE.png` + kit wordmark; note layout.
-2. AI-generate the hero from the user’s product reference: centered jewelry, pale mint glow, no shadow, no logo in the generation (or generate logo-free then overlay).
-3. Overlay the locked wordmark at the template position; do not move/scale unless the user asks.
-4. Quick QA: product centered (bbox center x ≈ 400); no green spill on metal; bg lighter than logo; wordmark crisp and readable.
-5. Deliver `/workspace/brand/Meet_Lumiere_<sku_or_desc>_main_1x1.png` (and copy into the brand kit if they ask to keep it).
-
-## Tweaks the user often requests
-- 「背景再浅/深一点」→ change **background only**, keep product and wordmark.
-- 「字体不变」→ do not move/resize/recolor the wordmark.
-- 「居中」→ measure product bbox center vs 400,400 and nudge if needed.
+1. Confirm this is a Meet Lumière main image, not a detail image.
+2. Inspect the approved template and original wordmark asset.
+3. Inspect the user's product photos and lock the product geometry.
+4. Preserve the actual product photo or use a reference-led edit that does not alter construction.
+5. Apply the pale-mint/cream background and exact wordmark placement from the approved template.
+6. Check square 1254 × 1254 output, centered product, original logo, clean gradient, and unchanged product details.
+7. Deliver the image directly.
 
 ## Do not
-- Replace wordmark with generated text.
-- Tint the product green when deepening the glow.
-- Add hand/bracelet illustrations or competitor logos unless asked.
-- Ship a soft/pale AI fake of the wordmark instead of the kit PNG.
+- Replace the pale-mint template with a generic white background.
+- Change the logo font, spelling, color, shape, or position.
+- Generate the wordmark with AI.
+- Reuse the main-image template for detail pages automatically.
+- Add Chinese text or unrequested promotional copy.
+- Change the product to improve symmetry or composition.
+- Claim exact dimensions or product fidelity unless checked.
+
+## User-approved adjustment rule
+The template remains locked unless the user explicitly requests a change. When the user requests a background adjustment, change only the background. When the user requests a product correction, change only the identified product area and preserve the logo and background.
